@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@100;200;300;400;500;600;700&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.nav {
+	background: #222;
+	padding: 6px 0;
+}
+.nav-logo img{
+    height: 68px;
+    float: left;
+}
+.nav-right-menu{
+    text-align: right;
+}
+.nav-right-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-toggle{
+    font-size: 30px;
+    color: #111;
+    margin:0  20px;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 992px){
+    .container{
+        width: 100%;
+}
+    .nav-right-menu ul{
+        text-align: left;
+}
+    .nav-right-menu{
+        padding-bottom: 10px;
+}
+    .nav-right-menu ul{
+        margin-top: 30px;
+}
+    .nav-right-menu ul li{
+        background: #222;
+        padding: 20px;
+        color: #fff;
+        margin: 0px;
+}
+    .nav-logo img {
+        height: 49px;
+        float: left;
+}
+}
+@media only screen and (max-width: 992px) {
+    .nav-toggle{
+        display: block;
+}
+    .nav-right-menu ul li{
+        display: block;
+}
+    .nav-right-menu ul{
+        display: none;
+}
+}
